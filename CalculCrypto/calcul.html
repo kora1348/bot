@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Calcul</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <form>
+    <h2>Calcul Coin </h2>
+    <label>Cours début</label>
+    <input type="text" id="currentOne">
+    <label>Cours fin</label>
+    <input type="text" id="currentTwo">
+    <input type="button" value="Confirmer" onclick="confirmTwoDecimal()">
+    <br /><br />
+    <p>Le taux de variation est de => <span id="currentTotalTwoDecimal"></span>%</p>
+    <h2>Calcul Trade</h2>
+    <input type="text" id="tradeOne"> X  <input type="text" id="tradeTwo">  
+    <input type="button" value="Calcul" onclick="calcul()">
+    <p>Take Profit & Stop loss => <span id="tradeTotal"></span>$</p>
+  </form>
+
+</body>
+ <script src="calcul.js"></script>
+</html>
